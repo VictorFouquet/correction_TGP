@@ -1,0 +1,18 @@
+
+  <%= form_tag url_for(action: 'create'), method: "post" do %>
+
+    <div class='form-row'>
+      <div class="col-md-4 mb-3">
+        <%= label_tag 'Email' %>
+        <%= text_field_tag 'email' %>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <%= label_tag 'Password' %>
+        <%= text_field_tag 'password' %>
+      </div>   
+    </div>
+    
+    <%= submit_tag "Sign in" %>
+
+    <% end %>
